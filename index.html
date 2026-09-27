@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0d0a1a" />
+  <meta name="description" content="Ucapan ulang tahun ke-17 untuk Risa Cahya Cantik." />
+  <title>Untuk Risa Cahya Cantik ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="loader" id="loader">
+    <div class="loader-heart">♡</div>
+    <p>menyiapkan sesuatu untuk Risa...</p>
+  </div>
+
+  <div class="stars" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <canvas id="confetti"></canvas>
+
+  <header class="nav">
+    <a class="brand" href="#home">Risa <span>♡</span></a>
+    <button class="music-btn" id="musicBtn" aria-label="Aktifkan musik suasana">
+      <span class="music-bars"><i></i><i></i><i></i><i></i></span>
+      <span id="musicText">suasana</span>
+    </button>
+  </header>
+
+  <main id="home">
+    <section class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">27 SEPTEMBER • A LITTLE CELEBRATION</p>
+        <h1>Happy 17th,<br><em>Risa Cahya Cantik.</em></h1>
+        <p class="hero-sub">Hari ini dunia punya satu alasan tambahan untuk tersenyum: kamu. ♡</p>
+        <a class="cta" href="#letter">Buka surat kecilku <span>↓</span></a>
+      </div>
+
+      <div class="hero-photo-wrap reveal">
+        <div class="photo-glow"></div>
+        <div class="polaroid tilt">
+          <img src="assets/risa-01.jpeg" alt="Risa sedang merayakan ulang tahun" />
+          <div class="polaroid-caption">seventeen looks lovely on you</div>
+        </div>
+        <div class="sticker sticker-1">17 ✦</div>
+        <div class="sticker sticker-2">♡</div>
+      </div>
+
+      <div class="scroll-cue">scroll pelan-pelan <span>↓</span></div>
+    </section>
+
+    <section class="letter section" id="letter">
+      <div class="section-label reveal">01 — A LETTER FOR YOU</div>
+      <div class="letter-grid">
+        <div class="letter-title reveal">
+          <p class="mini">untuk seseorang yang spesial</p>
+          <h2>Risa,<br><span>this little page is yours.</span></h2>
+        </div>
+        <article class="paper reveal">
+          <div class="paper-top">♡ surat yang tidak dikirim lewat chat</div>
+          <p>Hai, Risa.</p>
+          <p>Selamat ulang tahun yang ke-17, cantik. Semoga di umur baru ini, langkahmu selalu dipertemukan dengan hal-hal baik, orang-orang baik, dan alasan-alasan kecil yang bikin kamu tersenyum setiap hari.</p>
+          <p>Aku harap kamu selalu ingat satu hal: kamu tidak harus menjadi sempurna untuk menjadi seseorang yang berharga. Jadi dirimu sendiri saja—yang ceria, manis, kadang random, dan tetap punya cara sendiri untuk membuat hari terasa lebih hangat.</p>
+          <p>Semoga semua yang sedang kamu perjuangkan pelan-pelan menemukan jalannya. Kalau suatu hari capek, istirahat. Kalau takut, peluk orang yang kamu percaya. Dan kalau bahagia, jangan lupa rayakan.</p>
+          <p>Terima kasih sudah menjadi Risa. <strong>Happy birthday, sayang. ♡</strong></p>
+          <div class="signature">— dari seseorang yang sayang kamu</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="section-label reveal">02 — LITTLE MEMORIES</div>
+      <div class="gallery-head reveal">
+        <h2>Beberapa momen,<br><em>yang layak disimpan.</em></h2>
+        <p>Empat foto. Banyak cerita. Dan semoga masih banyak halaman berikutnya.</p>
+      </div>
+
+      <div class="masonry">
+        <button class="gallery-card card-a reveal" data-full="assets/risa-02.jpeg">
+          <img src="assets/risa-02.jpeg" alt="Risa dan pasangan berfoto bersama" />
+          <span>01 / together</span>
+        </button>
+        <button class="gallery-card card-b reveal" data-full="assets/risa-03.jpeg">
+          <img src="assets/risa-03.jpeg" alt="Risa dan pasangan di depan cermin" />
+          <span>02 / silly us</span>
+        </button>
+        <button class="gallery-card card-c reveal" data-full="assets/risa-04.jpeg">
+          <img src="assets/risa-04.jpeg" alt="Risa dan pasangan tersenyum" />
+          <span>03 / a soft day</span>
+        </button>
+        <button class="gallery-card card-d reveal" data-full="assets/risa-01.jpeg">
+          <img src="assets/risa-01.jpeg" alt="Risa dengan kue ulang tahun" />
+          <span>04 / seventeen</span>
+        </button>
+      </div>
+      <p class="tap-note reveal">tap foto untuk melihat lebih besar</p>
+    </section>
+
+    <section class="wish section">
+      <div class="wish-card reveal">
+        <div class="wish-stars">✦　✧　✦</div>
+        <p class="mini">MAKE A WISH</p>
+        <h2>Pejamkan mata.<br><em>Buat satu harapan.</em></h2>
+        <p class="wish-text">Bayangkan satu hal yang paling ingin kamu wujudkan di umur 17 ini. Simpan baik-baik. Semoga semesta pelan-pelan mengantarkannya kepadamu.</p>
+        <button class="wish-btn" id="wishBtn">Aku sudah punya harapan ✨</button>
+        <div class="wish-result" id="wishResult">Semoga terkabul. Sekarang senyum dulu. ♡</div>
+      </div>
+    </section>
+
+    <section class="final section">
+      <div class="final-content reveal">
+        <p class="eyebrow">ONE LAST THING</p>
+        <h2>Keep being<br><em>you, Risa.</em></h2>
+        <div class="big-heart" id="bigHeart">♡</div>
+        <p>17 tahun adalah awal dari banyak sekali cerita.<br>Semoga halaman-halamannya indah.</p>
+        <div class="final-date">happy birthday • 17 • with love</div>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Tutup">×</button>
+    <img id="lightboxImg" src="" alt="" />
+  </div>
+
+  <footer>
+    dibuat khusus untuk Risa Cahya Cantik ♡
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
